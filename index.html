@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="./styles.css" rel="stylesheet">
+</head>
+<body id="main-body"style="overflow:auto;">
+  <div class="snackbar font-16 lh-20" id="snackbar"></div>
+  <header-component>
+    <header class="ola-header-sticky">
+      <div id="header" class="secondary-header">
+        <div class="max-width">
+          <div class="pull-left pd-16">
+            <div class="navbar-mb">
+              <div class="ola-logo">
+                <div class="display-flex">
+                  <a href class="event-elem"event-name="desktop_header_ola_logo">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-white-logo.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="pull-right">
+                <a id="desktop_top_menu_ola_s1"event-name="desktop_top_menu_ola_s1"class="navbar"href="https://olaelectric.com/s1?utm_source=Olacabs&utm_medium=CLM&utm_campaign=HHB" translation-key="ola_s1">Ola S1</a>
+                <a id="desktop_top_menu_ola_electric"event-name="desktop_top_menu_ola_electric"class="navbar-new-opyion event-elem" href="https://olaelectric.com/s1?utm_source=Olacabs&utm_medium=CLM&utm_campaign=HHB"translation-key="ola_electric">Ola Electric</a>
+                <a id="desktop_top_menu_ola_future_factory"event-name="desktop_top_menu_ola_future_factory" class="navbar-new-option event-elem"href="https://olaelectric.com/future-factory?utm_source=Olacabs&utm_medium=CLM&utm_campaign=HHB"translation-key="ola_futurefactory" >olafuturefactory</a>
+
+              </div>
+            </div>
+            <div>
+              <a id="desktop_top_menu_book_now" event-name="desktop_top_menu_book_now"href="https://book.olacabs.com?utm_source=book_now_top_right"class="event-elem book-cab"translation-key="book_ola_cab">Book an Ola Cab</a>
+              <a id="desktop_top_menu_free_s1_test_ride_oc_header"event-name="desktop_top_menu_free_s1_test_ride_oc_header"class="event-elem test-ride"href="https://tr.olaelectric.com/trInfo?utm_source=Olacabs&utm_medium=CLM&utm_campaign=Header"translation-key="free_s1_tr">Free S1 test Ride</a>
+              <button class="hamburger event-elem">
+                <img class="hamburger-mb" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/Hamburger.svg">
+              </button>
+            </div>
+            <div class="clearfix"></div>
+
+          </div>
+        </div>
+        <div id="sidebar_nav" class="sidebar-navigation hide-xs">
+          <div class="close_btn cross" id="hamburger_close">
+            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/close.svg">
+          </div>
+          <div class="clearfix"></div>
+          <div class="option-wrapper">
+            <ul class="ui-menu-options">
+              <li>Book an Ola Cab</li>
+              <li>Drive with Ola</li>
+              <li>Ola s1</li>
+              <li>Ola Electric</li>
+              <li>Ola FutureFactory</li>
+              <li>Ola Corporate</li>
+              <li>Ola Foundation</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="fix-bottom">
+            <a class="offers-banner-mb event-elem"event-name="desktop_feed_card_free_s1_test_ride"onclick="window.open('https://tr.olaelectric.com', '_blank');return false;">
+              <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/pink-banner-mob.png"class="cursor-pointer" height="100%"width="100%">
+            </a>
+            <div class="bottom-div">
+              <a href="/careers" class="bottom-options event-elem" event-name="desktop_navbar_careers">Careers</a>
+              <a href="https://www.olacabs.com/info/faqs#notices" class="bottom-options event-elem"event-name="desktop_navbar_notices">Notices</a>
+              <a href="https://www.olacabs.com/info/faqs#privacyPolicy"class="bottom-options event-elem"event-name="desktop_navbar_privacy">Privacy</a>
+              <a href="https://www.olacabs.com/info/faqs#termsAndConditions"class="bottom-options event-elem"event-name="desktop_navbar_tnc">T&C</a>
+            </div>
+            <div class="bottom-div">
+              <div>
+                <a href class="event-elem" event-name="desktop_navbar_ola_logo">
+                  <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/OLA-black.svg">
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/olacabs"class="event-elem"event-name="desktop_navbar_instagram">
+                  <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/instagram-icon.svg"class="mL-26">
+                </a>
+                <a href="https://www.youtube.com/user/OfficialOlacabs"class="event-elem" event-name="desktop_navbar_youtube">
+                  <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/youtube-icon.svg" class="mL-26">
+                </a>
+                <a href="https://twitter.com/Olacabs"class="event-elem"event-name="desktop_navbar_twitter">
+                  <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/twitter-icon.svg"class="mL-26">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body-overlay overlay-hide"></div>
+    </header>
+  </header-component>
+  <!-- <div class="container">
+    <div>
+      <ul class="nav-links">
+        <li><a href="#ola">OLA</a></li>
+        <li><a href="#ola-s1">Ola S1</a></li>
+        <li><a href="#ola-electric">Ola Electric</a></li>
+        <li><a href="#ola-futurefactory">Ola FutureFactory</a></li>
+      </ul>
+    </div>
+    
+    <div class="ola">
+      <ul class="nav-links">
+        <li><a href="#" class="button">Book an Ola Cab</a></li>
+        <li><a href="#" class="button">Free S1 Test Ride</a></li>
+      </ul>
+    </div>
+    
+    <button class="fa fa-bars" onclick="toggleNav()"></button>
+  </div> -->
+  <!-- <img src="images/hero-banner.webp"class="s1"/> -->
+  <div style="position:relative;">
+    <section-skewed skew="end" background="#00000" name="header">
+      <div slot="outer-wrapper-children">
+        <div class="hero-banner desktop-only">
+          <p class="title-1 fw-500 font-48 lh-48 main-title-abs">Moving people, and the world</p>
+        </div>
+        <div class="hero-banner mobile-only">
+          <video-component video-src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/banner-video-mob.mp4"video-type="video/mp4"height="auto"width="100%">
+            <video id="video-wrapper" controlslist="nodownload"playsinlie autoplay muted loop style="width:100%;height:auto;">
+              <source id="video-element"src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/banner-video-mob.mp4"type="video/mp4">
+              "
+              Your browser does not support the video.
+          "
+
+            </video>
+          </video-component>
+        </div>
+      </div>
+    </section-skewed>
+
+  </div>
+  <div class="booking-widget">
+    <div class="snackbar font-16 1h-20" id="snackbar"></div>
+    <div class="page-container max-width">
+    <div class="tab-container event-elem" id="tab-container"event-elem="C:\Users\Harshitha\OneDrive\Desktop\workspace\exercises\ola cab website\index.html">
+      <div class="tab-item active" data-tab="Daily">Daily</div>
+      <div class="tab-item " data-tab="Rental">Rental</div>
+      <div class="tab-item " data-tab="Outstation">Outstation</div>
+    </div>
+  <div class="main-container">
+    <div class="main-sub-conatiner">
+      <div id="loader" class>
+        <img src="images/dot-loader.gif"alt="sample image">
+      </div>
+      <div id="current-location" class="widget-location-input card bg-dark pickup dot green">
+        <div class="row-sm ptr">
+          <input type="text" placeholder="current location" class="value text">
+          <div id="select-curr-loc" class="current-location-icon">
+            <img src="images/current-location.svg" alt>
+          </div>
+          <ul class="suggestion-list close"></ul>
+        </div>
+      </div>
+      <div class="seperator" id="seperator"></div>
+      <div id="destination-input" class="widget-location-input card bg-dark dot red">
+        <div class="row-sm ptr">
+          <input type="text" placeholder="Enter Destination" class="value text">
+          <ul class="suggestion-list close"></ul>
+        </div>
+      </div>
+      <div id="select-package-input" class="widget-location-input card bg-dark hide">
+        <div class="row-sm ptr">
+          <p class="value text select-package">select package</p>
+          <div id="select-curr-loc" class="clock-logo">
+            <img src="images/clock.svg">
+          </div>
+          <ul class="suggestion-list close"></ul>
+        </div>
+      </div>
+      <div id="search-cabs" class="ow-button-container">
+        <button class="ow-button event-elem" event-name="desktop_booking_widget_daily_search">
+          <ow-icon name="icon"></ow-icon>
+          <span>
+            <span class="search-text-in-cta">SEARCH</span>
+            <span id="search-btn" class="search-text-in-cta cab-type-in-cta">OLA CABS</span>
+            <span class="forward-icon">
+              <img src="images/forward-arrow.svg" alt>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div id="error-comp" class="hide">
+        <p>Please enable location permission and try again</p>
+        <img src="images/current-location (1).svg" alt>
+        <a class="close_btn">X</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</booking-widget>
+<section class="max-width">
+  <a class="content-wrapper event-elem" event-name="desktop_feed_card_ola_s1"
+  event-value="{'event_value':'offer_heading', 'route_name':'{{route_source}}_to_{{route_destination}}'}" onclick="window.open('https://tr.olaelectric.com', '_blank');return false;">
+  <img src="images/banner-green-desktop (1).png" height="100%" width="100%" class="desktop-only cursor-pointer">
+  <section class="text-center first-fold-text-push">
+    <h1 class="electrified-title font-48 mar-bot-50 black fw-500 desktop-only">Global mobility ecosystem driving communities forward</h1>
+  </section>
+  
+  <section name="statistics">
+    <div class="flex-space-between statistics-flex-mb">
+        <div class="flex-column-center statistics-row-mb">
+          <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/cts-covered.svg" name="cities-covered"></object>
+            <div class="mobile-only">
+                <p class="title-1 fw-500 font-40 lh-48 text-center">250+ cities</p>
+                <p class="title-3 font-16 fw-400 lh-24 text-center">Across India, Australia, New Zealand and the UK</p>
+            </div>
+        </div>
+        <div class="flex-column-center statistics-row-mb">
+            <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/year-rides.svg" name="yearly-rides"></object>
+            <div class="mobile-only">
+                <p class="title-1 fw-500 font-40 lh-48 text-center">55 Crore+ yearly rides</p>
+                <p class="title-3 font-16 fw-400 lh-24 text-center">Booked by our customers every year</p>
+            </div>
+        </div>
+        <div class="flex-column-center statistics-row-mb">
+            <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/kms-covered.svg" name="kms-covered"></object>
+            <div class="mobile-only">
+                <p class="title-1 fw-500 font-40 lh-48 text-center">12 crore+ km on S1</p>
+                <p class="title-3 font-16 fw-400 lh-24 text-center">Distance covered on Ola S1 scooters within a year of launch</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+</div>
+</section-skewed>
+<section-skewed skew="both" background="#000000">
+  <section class="outer-wrapper both" style="background: rgb(0,0,0);">
+    <slot name="outer-wrapper-children"></slot>
+  </section>
+<div slot="outer-wrapper-children" class="pad-y-100 max-width skew-reset">
+    <h1 class="electrified-title font-48 mar-bot-50 fw-500 white">Ola S1. The best scooter ever built</h1>
+    <img class="full-width mobile-only" src="images/s1-sport-mob.png" alt="">
+    <div class="flex-space-between col-rev-mb mar-y-50 gap-50 mar-top-0">
+      <a class="moreLink top-10 fw-500 font-22 lh-24 i-grid-c mobile-only event-elem"
+      event-name="desktop_more_about_ola_s1" onclick="window.open('https://olaelectric.com/s1?utm_source=Olacabs&utm_medium=CLM&utm_campaign=HHB', '_blank');return false;"></a>
+    <div class="text-left flex-40">
+        <p class="title-3-white font-18 fw-400 lh-24 light">With fantastic features such as Hyper Mode and Eco Mode, get an unbelievable top speed of 116 KM/H and an unbeatable range that can reach up to 300 km.
+          <div>
+            <a class="moreLink top-10 fw-500 font-22 lh-24 i-grid-c desktop-only event-elem" event-name="desktop_more_about_ola_s1" onclick="window.open('https://olaelectric.com/s1?utm_source=Olacabs&utm_medium=CLM&utm_campaign=HHB', '_blank');return false;">
+              <span>More about Ola S1</span>
+              <span><img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg" alt=""></span>
+            </a>
+          </div>
+        </p>
+    </div>
+        <div class="flex-space-between black-box-container">
+          <div class="black-box">
+              <div class="title-3-white font-16 fw-400 lh-24">
+                  181 <span class="font-16">KM</span>
+              </div>
+              <div class="flex-column-center title-4 box-subhead">
+                  RANGE
+              </div>
+          </div>
+          <div class="black-box">
+              <div class="title-3-white font-16 fw-400 lh-24">
+                  116 <span class="font-16">KM/H</span>
+              </div>
+              <div class="flex-column-center title-4 box-subhead">
+                  TOP SPEED
+              </div>
+          </div>
+          <div class="black-box">
+              <div class="title-3-white font-16 fw-400 lh-24">
+                  2.9 <span class="font-16">SEC</span>
+              </div>
+              <div class="flex-column-center title-4 box-subhead">
+                  0 TO 40 KM/H
+              </div>
+          </div>
+      </div>
+  </div>
+  <div>
+    <a class="event-elem" event-name="desktop_feed_card_free_s1_test_ride" onclick="window.open('https://tr.olaelectric.com', '_blank');return false;">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/pink-banner-desktop.png" height="100%" width="100%" class="desktop-only cursor-pointer"/>
+    </a>
+  </div>
+</div>
+</section-skewed>
+<section-skewed background="#ffffff">
+  <div slot="outer-wrapper-children" class="pad-y-100 max-width">
+    <slider-component selectionname="tech-for-world" showbgcolor="true">
+      <div class="slider-container">
+        <p class="title" id="slider-title">Tech for the world,made in India</p>
+        <div id="slider-wrapper" class="ver-grid">
+          <div style="background-color: #F0F4F4;"class="slider-item row bg-color"onclick="window.open(&quot;https://olaelectric.com/future-factory&quot;);return false;">
+            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-futurefactory.png"alt="ola-future-factory" class="item-image">
+            <div class="item-details">
+              <a class="event-elem" event-name="desktop_caraousel_future_factory">
+                <p class="item-header link-header">
+                  "Ola Futurefactory"
+                  <img class="arrow-img green-arrow" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg" alt="right-arrow">
+                </p>
+              </a>
+              <p class="item-subheader">Powered by over 3000 AI-driven robots, the Ola Futurefactory is the world's most advanced two-wheeler manufacturing facility.</p>
+            </div>
+          </div>
+          <div style="background-color: #F4F3F0;" class="slider-item row-reverse bg-color"onclick="window.open(&quot;https://blog.olaelectric.com/ola-to-invest-usd-500-million-in-battery-innovation-and-indigenous-cell/&quot;);return false;">
+            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/battery-innovation-center.png" alt="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/battery-innovation-center.png" class="item-image">
+            <div class="item-details">
+              <a class="event-elem" event-name="desktop_caraousel_battery_innovation_center">
+                <p class="item-header link-header">
+                  "battery Innovation Centre"
+                  <img class="arrow-img green-arrow"src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg" alt="right-arrow">
+                </p>
+              </a>
+              <p class="item-subheader">
+                "We're building a state of the art centre with a $500 million investment making it one of the world's largest most advanced cell R&D facility."
+              </p>
+            </div>
+          </div>
+          <div style="background-color: #F4F3F0;" class="slider-item row bg-color" onclick="window.open(&quot;https://blog.olaelectric.com/indias-first-indigenously-made-lithium-ion-cell/&quot;);return false;">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/battery-img.png" alt="li-ion-battery" class="item-image">
+          <div class="item-details">
+            <a class="event-elem" event-name="desktop_caraousel_li_ion_battery">
+              <p class="item-header link-header">
+                "Indians first"
+                <br>
+                " Indigenous Cell"
+                <img class="arrow-img green-arrow" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg" alt="right-arrow">
+              </p>
+            </a>
+            <p class="item-subheader">
+              "We're working towards making our own cell technology to scale faster and revolutionise the EV segment."
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </slider-component>
+  </div>
+  </section-skewed>
+<section-skewed skew="both" background="#00000">
+<section class="outer-wrapper both" style="background: rgb(0,0,0);">
+<slot name="outer-wrapper-children">
+
+</slot>
+</section>
+<div slot="outer-wrapper-children" class="pad-y-100 max-width skew-reset">
+  <h1 class="electrified-title">India's most ambitious car</h1>
+  <video-component video-src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-car-video.mp4" video-type="video/mp4" poster="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/car-teaser-thumb.png"height="auto" width="100%">
+    <video id="video-wrapper" controlslist="nodownload"playsinline autoplay muted loop poster="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/car-teaser-thumb.png"style="width:100%;height:auto;">
+     <source id="video-element" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-car-video.mp4" type="video/mp4">
+     "Your browser does not support the video." 
+    </video>
+  </video-component>
+</div>
+</section-skewed>
+<section-skewed>
+  <div slot="outer-wrapper-children" class="pad-y-100 max-width">
+    <h1 class="electrified-title font-48 mar-bot-50 fw-500 black">There's an Ola ride for everyone</h1>
+    <div class="ride-grid">
+      <img class="ride-item-a" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ride-budget.svg" alt>
+      <div class="ride-item-b">
+        <p class="ride-header font-24 fw-500 1h-48">For any budget</p>
+        <p class="ride-desc">
+          "From"
+          <b>Bikes</b>
+          "and"
+          <b>Autos</b>
+          "to"
+          <b>prime Sedans</b>
+          "and"
+          <b>prime sedans</b>
+          "and"
+          <b>Prime SUVs</b>
+          ", you will find a ride in your budget at your convenience any time."
+        </p>
+      </div>
+      <div class="ride-item-c">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ride-distance.svg" alt>
+      </div>
+      <div class="ride-item-d">
+        <p class="ride-header font-24 fw-500 lh-48">For any distance</p>
+        <p class="ride-desc">
+          "Book rides within the city with"
+          <b>Daily</b>
+          ", or take a trip to your 
+          favourite destinations outside the city with "
+          <b>Outstation</b>
+          "."
+        </p>
+      </div>
+      <div class="ride-item-e">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ride-duration.svg"alt>
+      </div>
+      <div class="ride-item-f">
+        <p class="ride-header font-24 fw-500 lh-48">For any duration</p>
+        <p class="ride-desc">
+          "
+          Easily plan a day out without having to worry about conveyance 
+          with an hour-based package from "
+          <b>Rental</b>
+          "."
+        </p>
+      </div>
+      <section id="making-innovation" class="desktop-only">
+        <stories-componet>
+        <div class="stories-container">
+          <div>
+            <div class="images-container">
+              <div id="images-wrapper">
+                <video-component videosrc="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-riders.mp4" videotype="video/mp4"height="auto" width="490px"style="display: block; opacity: 1.08347;">
+                  <video id=" video-wrapper"controlslist="nodownload" playsinline autoplay muted loop style="width:490px; height:auto;">
+                   <source id="video-element" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-riders.mp4" type="video/mp4">
+                   "
+                   Your browser does not support the video.
+               "
+                </video>
+               </video-component>
+               <video-component videosrc="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-drivers.mp4" videotype="video/mp4" height="auto" width="490px">
+                 <video id="video-wrapper" controlslist="nodownload" playsinline autoplay muted loop style="width:490px;height:auto"width="490px">
+                   
+                 </video>
+               </video-component>
+              </div>
+            </div>
+          </div>
+          <div class="stories-detalis">
+            <p class="title">Making innovations since 2011</p>
+            <div id="stories-wrapper">
+            <div class="description-wrapper">
+              <div>
+                <div class="progress-bar active"style="animation-duration: 16s" active id="progress-bar-0"></div>
+              </div>
+              <div class="description">
+                <p class="header">For Riders</p>
+                <p class="subheader">
+                  "We constantly experiment to come up with industry-first features for our riders that eventually become a norm."
+                </p>
+              </div>
+            </div> 
+            <div class="description-wrappers">
+              <div>
+                <div class="progress-bar active" style="animation-duration: 16s" id="progress-bar-1"></div>
+              </div>
+              <div class="description">
+                <p class="header">For Drivers</p>
+                <p class="subheader">
+                  "Our drivers get real time stats to help optimize their rides better and earn more, straight from the app."
+                </p>
+              </div>
+            </div> 
+            </div>
+          </div>
+        </div>
+        </stories-componet>
+      </section>
+      <!-- <section id="making-innovations" class="mobile-only">
+        <slider-component sectionname="making-innovations" showbgcolor="false">
+          <div class="slider-container">
+            <p class="title" id="slider-title">Making innovations since 2011</p>
+            <div id="slider-wrapper" class="ver-grid">
+              <div style="background-color: undefined" class="slider-item row "
+              onclick="window.open(&quot;undefined&quot;);return false;">
+              <video-component videosrc="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-riders.mp4" video type="video/mp4" height="auto"width="calc(100vw - 48px)"
+            </div>
+            </div>
+          </div> -->
+        </slider-component>
+      </section>
+  </div>
+</section-skewed>
+<section-skewed skew="both" background="#F1F6E9">
+  <div slot="outer-wrapper-children" class="pad-y-100 max-width skew-reset">
+    <h1 class="electrified-title font-48 mar-bot-50 fw-500 black smarter-way-text">Experience the smarter way to pay</h1>
+  </div>
+  <div>
+    <div class="postpaid-grid">
+      <img class="postpaid-item-a" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-shop-img.png" alt>
+      <div class="postpaid-item-b">
+        <div class="flex align-baseline pp-mar">
+          <p class="text-black ih-28 fw-200 font-24 pp-text">postpaid +</p>
+          <p class="green-box-title font-14 lh-20 fw-500">Trusted by 40 lakh+ users</p>
+        </div>
+        <p class="pp-head-text-dt pp-mar">Buy now, pay later for all spends once a month</p>
+      </div>
+      <div class="postpaid-item-c flex">
+        <div class="pp-img-desc flex-space-between">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-1.svg"
+          alt width="58px" height="58px">
+          <p>Buy now, pay after 30 days</p>
+        </div>
+      <div class="pp-img-desc flex-space-between">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-1.svg" alt width="58px"height="58px">
+        <p>Shop across 20,000 apps</p>
+      </div>
+      <div class="pp-img-desc flex-space-between">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-2.svg" alt width="58px" height="58px">
+        <p>Credit limit upto ₹100,000</p>
+      </div>
+      </div>
+    </div>
+    <div class="mobile-only dash"></div>
+    <div class="insure-grid">
+      <div class="i-grid-a">
+        <p class="text-black lh-28 fw-200 font-24">Insurance</p>
+        <p class="head-text">Effective insurances for all your risks</p>
+      </div>
+      <div class="i-grid-b">
+        <objeect type="image/svg+xml"data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-trips.svg" name></objeect>
+        <object type="image/svg+xml" class="insurance-banner-image" date="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-daily.svg"name></object>
+
+      </div>
+      <a class="class="moreLink fw-500 font-22 lh-24 i-grid-c event-elem" onclick="checkRedirect(downloadIos, downloadAnd, downloadAnd, 'ola')" event-name="desktop_ola_insurance">
+      "Explore more on the Ola app  "
+      <span>
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"alt>
+
+      </span>
+    </a>
+    <p class="muchmore desktop-only">+ Much more</p>
+    </div>
+    </div>
+  </div>
+</section-skewed>
+<section-skewed>
+  <div slot="outer-wrapper-children" class="pad-y-100 max-width">
+    <div>
+      <h2 class="electricfield-title">
+        Making a difference
+      </h2>
+      <div class="mad-grid-container">
+        <div class="grid-item-a">
+          "Ola Foundation, the social welfare arm of Ola, is an outcome of a belief based on real interactions, research, and extensive study on the far-reaching impact of enabling and equipping people."
+        </div>
+        <div class="grid-item-b">
+          <h3>1 lakh+</h3>
+          <p>Families impacted in FY 2020-21</p>
+        </div>
+        <div class="grid-item-c">
+          <h3>93 lakh+</h3>
+          <p>Meals enabled across India in FY 2020-21</p>
+        </div>
+        <div class="grid-item-d">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/womens.png"alt>
+        </div>
+        <div class="grid-item-e">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/donating.png"alt>
+        </div>
+        <div class="grid-item-f">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/mother-son.png"alt>
+        </div>
+      </div>
+      <a onclick="window.open('https://ola.foundation', '_blank');return false;"event-name="desktop_ola_foundation" class="moreLink fw-500 font-22 lh-24 event-elem">
+        "More about Ola Foundation "
+        <span>
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg" width="16px" alt>
+        </span> 
+      </a>
+    </div>
+  </div>
+</section-skewed>
+<section-skewed skew="both" background="#F2F4F0">
+  <div slot="outer-wrapper-children" class="pad-y-100 max-width skew-reset">
+    <slider-component sectionname="recent-from-blogs"showbgcolor="false">
+      <div class="slider-container">
+        <p class="title" id="slider-title">Recent from our blogs</p>
+        <div id="slider-wrapper" class="hor-grid" style="grid-template-colums:repeat(4,minmax(0px,1fr));">
+        <div style="background-color: undefined" class="slider-item row"onclick="window.open(&quot;https://blog.olaelectric.com/2022-beginning-of-the-end-ice-age/&quot;);return false;">
+        <img src="images/end_for_ice_age.jpeg" alt="end-for-ice-age" class="item-image">
+        <div class="item-details">
+          <p class="item-header">2022: Beginning of the End for ICE Age</p>
+          <p class="item-subheader"></p>
+          <a class="item-link event-elem" event-name="desktop_blog_end_for_ice_age">
+            "Know more"
+            <img class="arrow-img" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg" alt>
+          </a>
+        </div>
+        </div>
+        <div style="background-color:undefined"class="slider-item row-reverse "onclick="window.open(&quot;https://blog.olaelectric.com/ola-signs-pli-agreement-with-ministry-of-heavy-industries/&quot;);return false;">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/pli-agreement.png"alt="pli-agreement"class="item-image">
+          <div class="item-details">
+            <p class="item-header">Ola signs PLI agreement</p>
+            <p class="item-subheader"></p>
+            <a class="item-link event-elem" event-name="desktop_blog_pli_agreement">
+              "Know more"
+              <img class="arrow-img"src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"alt>
+            </a>
+          </div>
+        </div>
+        <div style="background-color: undefined" class="slider-item row "onclick="window.open(&quot;https://blog.olaelectric.com/ola-to-invest-usd-500-million-in-battery-innovation-and-indigenous-cell/&quot;);return false;">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-to-invest.png"alt="ola-to-invest"class="item-image">
+          <div class="item-details">
+            <p class="item-header">Ola to invest $500 million</p>
+            <p class="item-link event-elem" event-name="desktop_blog_ola_investment"></p>
+            <a class="item-link event-elem" event-name="desktop_blog_ola_investment">
+              "Know more"
+              <img class="arrow-img" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"alt>
+            </a>
+          </div>
+        </div>
+        <div style="background-color: undefined" class="slider-item row-reverse"onclick="window.open(&quot;https://blog.olaelectric.com/indias-first-indigenously-made-lithium-ion-cell/&quot;);return false;">
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/indigenous-cell.png"alt="indegenous-cell"class="item-image">
+          <div class="item-details">
+            <p class="item-header">India's first indigenous cell</p>
+            <p class="item-subheader"></p>
+            <a class="item-link event-elem" event-name="desktop_blog_li_ion_cell">
+              "know more"
+              <img class="arrow-img" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"alt>
+            </a>
+           </div>
+         </div>
+       </div>
+      </div>
+    </slider-component>
+  </div>
+</section-skewed>
+<section-skewed>
+<div slot="outer-wrapper-children"class="pad-y-100 max-width">
+  <section>
+    <div>
+      <h2 class="electrified-title font-48 mar-bot-50 fw-500 desktop-only downloadMainTitle">
+        "Download our apps to get the best experience"
+      </h2>
+      <h2 class="electrified-title font-48 mar-bot-50 fw-500 mobile-only">Download our apps</h2>
+      <div class="cardDownloadContainer">
+        <div style="background: radial-gradient(100% 100% at 28.66% 0%, #F4F8FC 0%, #D8DDE6 100%) " class="event-elem eachDownloadCont" onclick="checkRedirect(downloadIos, downloadAnd, showPopup, 'electric', 'popupa')" event-name="desktop_redirect_ola_electric_app">
+          <div>
+            <object type="image/svg+xml" class="appLogo" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-ev.svg" name="ola scooter riders"></object>
+          </div>
+          <div class="descContainer">
+            <div class="descHead">
+              <h3 class="descAppName font-24 fw-500 lh-48">Ola Electric</h3>
+              <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/right-arrow.svg"class="oppRotate"alt>
+            </div>
+            <p class="descDesc font-16 fw-400 lh-20">
+              "
+              Connect, control and communicate with your Ola S1
+          "
+            </p>
+          </div>
+        </div>
+        <div style="background: radial-gradient(100% 100% at 28.66% 0%, #F9FCF4 0%, #E0E6D8 100%)" class="event-elem eachDownloadCont"onlick="checkRedirect(downloadIos, downloadAnd, showPopup, 'ola', 'popupb')" event-name="desktop_redirect_ola_consumer_app">
+          <div>
+            <object type="image/svg+xml"class="appLogo" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/olalogo.svg"name="ola scooter in highways"></object>
+          </div>
+          <div class="descContainer">
+            <div class="descHead">
+              <div class="descAppName font-24 fw-500 lh-48">Ola</div>
+              <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/right-arrow.svg" class="oppRotate"alt>
+            </div>
+            <div class="descDesc font-16 fw-400 lh-20">
+              "
+              Book cabs, buy insurance, access Ola Money and much more
+          "
+            </div>
+
+          </div>
+        </div>
+        <div style="background: radial-gradient(100% 100% at 28.66% 0%, #F9FCF4 0%, #E0E6D8 100%)"class="event-elem eachDownloadCont"onclick="getOs() == 'ios' ? openSnackBar('Ola Driver app is available only on android') : checkRedirect(downloadIos, downloadAnd, showPopup, 'driver', 'popupc',)"event-name="desktop_redirect_ola_driver_app">
+          <object type="image/svg+xml"class="appLogo"data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-driver.svg"name="ola scooters in customer day"></object>
+        </div>
+        <div class="descContainer">
+          <div class="descHead">
+            <div class="descAppName font-24 fw-500 lh-48">Ola Driver</div>
+            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/right-arrow.svg"class="oppRotate hiddenIos"alt>
+          </div>
+          <div class="descDesc font-16 fw-400 1h-20">
+            "
+            Register as a driver to take rides, see your earnings and incentives
+        "
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+</section-skewed>
+<section-popup id="popupa" width="336" height="166" syle="visibility:hidden;">
+  <div slot="popup">
+    <h4 class="popup-header">Get Ola Electric app on</h4>
+    <p class="popup-desc">
+      "Download the Ola Electric app today for a 100% mobile  experience. Available on iOS and Android"
+    </p>
+    <div class="black-cont-download">
+      <a class="black-box-download" onclick="downloadIos('electric')">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/apple.svg"alt>
+      <div>
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/download-on.svg"alt style="margin-bottom: 2px;">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/app-store.svg"alt>
+      </div>
+      </a>
+      <a class="black-box-download" onclick="downloadAnd('electric')">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/play-store.svg"alt>
+        <div>
+          <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/get-on-g-play.svg" alt>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section-popup>
+</body>
+</html>
